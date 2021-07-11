@@ -1,11 +1,11 @@
 #!/bin/zsh
 
 if [ -z "$PROFILE_LOADED" ] && [ -r "$HOME/.zprofile" ]; then
-    source "$HOME/.zprofile"
+  source "$HOME/.zprofile"
 fi
 
 if [ -r "$HOME/.zaliases" ]; then
-    source "$HOME/.zaliases"
+  source "$HOME/.zaliases"
 fi
 
 load_nvm() {
