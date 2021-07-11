@@ -1,7 +1,7 @@
 curl
 git
 make
-nvim
+neovim
 stow
 sudo
 vim
