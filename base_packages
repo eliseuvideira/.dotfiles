@@ -1,7 +1,11 @@
 curl
 git
+less
 make
 neovim
+shellcheck
 stow
 sudo
+tmux
 vim
+zsh
