@@ -5,3 +5,6 @@ aur:
 .PHONY: git
 git:
 	stow --no-folding -t ~ git
+.PHONY: zsh
+zsh:
+	stow --no-folding -t ~ zsh
