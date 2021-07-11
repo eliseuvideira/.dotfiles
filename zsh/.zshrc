@@ -1,3 +1,19 @@
+#!/bin/zsh
+
+if [ -z "$PROFILE_LOADED" ] && [ -r "$HOME/.zprofile" ]; then
+    source "$HOME/.zprofile"
+fi
+
+if [ -r "$HOME/.zaliases" ]; then
+    source "$HOME/.zaliases"
+fi
+
+load_nvm() {
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+}
+
+
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
