@@ -1,0 +1,6 @@
+#!/bin/sh
+
+current_dir="$(realpath "$(dirname "$0")")"
+packages_file="$(realpath "$current_dir/../.packages")"
+
+paru -S --needed $(cat "$packages_file")
