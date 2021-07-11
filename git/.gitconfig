@@ -1,0 +1,9 @@
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
+[user]
+	email = eliseuvideira1@gmail.com
+	name = Eliseu Videira
+[push]
+	followTags = true
