@@ -1,0 +1,7 @@
+sudo systemctl enable docker
+sudo systemctl start docker
+
+sudo usermod -aG docker
+
+sudo systemctl enable cronie
+sudo systemctl start cronie
