@@ -1,9 +1,12 @@
+cronie
 ctop-bin
 docker
 docker-compose-bin
 fastfetch-git
+htop
 nodejs
 npm
 nvm
 oh-my-zsh-git
+shellcheck
 yarn
