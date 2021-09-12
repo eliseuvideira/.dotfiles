@@ -1,0 +1,16 @@
+#!/bin/sh
+
+script_dir="$(realpath "$(dirname "$0")")"
+packages_filename="$(realpath "$script_dir/../.packages")"
+
+update_packages() {
+  paru -Syu
+}
+
+install_packages() {
+  # shellcheck disable=SC2046
+  paru -S --needed $(cat "$packages_filename")
+}
+
+update_packages &&
+  install_packages

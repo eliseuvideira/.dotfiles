@@ -3,9 +3,9 @@ install: aur vim zsh git
 
 .PHONY: aur
 aur:
-	./.scripts/install_paru
-	./.scripts/install_packages
-	./.scripts/post_install
+	./.scripts/install-paru
+	./.scripts/install-packages
+	./.scripts/post-install
 .PHONY: git
 git:
 	stow --no-folding -t ~ git

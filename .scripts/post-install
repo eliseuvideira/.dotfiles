@@ -1,0 +1,21 @@
+#!/bin/sh
+
+enable_docker() {
+  sudo systemctl enable docker
+  sudo systemctl start docker
+}
+
+join_docker_group() {
+  if ! getent group docker | grep -q "\b${USER}\b"; then
+    sudo usermod -aG docker "$USER"
+  fi
+}
+
+enable_cronie() {
+  sudo systemctl enable cronie
+  sudo systemctl start cronie
+}
+
+enable_docker &&
+  join_docker_group &&
+  enable_cronie

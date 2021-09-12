@@ -1,0 +1,21 @@
+#!/bin/sh
+
+if [ -d "/opt/paru-bin" ]; then
+	exit 0
+fi
+
+clone_repo() {
+	sudo git clone "https://aur.archlinux.org/paru-bin.git" "/opt/paru-bin"
+}
+
+change_owner() {
+	sudo chown "$(id -u):$(id -g)" "/opt/paru-bin"
+}
+
+install_package() {
+	(cd "/opt/paru-bin" && makepkg -si)
+}
+
+clone_repo &&
+	change_owner &&
+	install_package
