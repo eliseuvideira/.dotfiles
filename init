@@ -1,7 +1,0 @@
-#!/bin/sh
-
-current_dir="$(realpath "$(dirname "$0")")"
-base_packages_file="$(realpath "$current_dir/.base_packages")"
-
-sudo pacman -Syu
-sudo pacman -S --needed $(cat "$base_packages_file")
