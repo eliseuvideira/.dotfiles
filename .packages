@@ -8,5 +8,6 @@ nodejs
 npm
 nvm
 oh-my-zsh-git
+rsync
 shellcheck
 yarn
