@@ -1,7 +1,7 @@
 cronie
 ctop-bin
 docker
-docker-compose-bin
+docker-compose
 fastfetch-git
 htop
 nodejs
