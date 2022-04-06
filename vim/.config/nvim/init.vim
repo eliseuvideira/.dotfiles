@@ -7,6 +7,9 @@ set expandtab tabstop=2 shiftwidth=2
 " line numbers
 set number relativenumber
 
+" disable mouse
+set mouse=
+
 " download plugin manager
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
   silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
